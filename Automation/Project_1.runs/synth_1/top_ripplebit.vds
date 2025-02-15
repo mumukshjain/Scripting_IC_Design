@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb 15 18:58:05 2025
+# Process ID: 39376
+# Current directory: /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/synth_1
+# Command line: vivado -log top_ripplebit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_ripplebit.tcl
+# Log file: /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/synth_1/top_ripplebit.vds
+# Journal file: /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top_ripplebit.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1384.527 ; gain = 118.020 ; free physical = 254338 ; free virtual = 485920
+Command: synth_design -top top_ripplebit -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 40739 
+WARNING: [Synth 8-2490] overwriting previous definition of module clk_div [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_moore.v:76]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1493.352 ; gain = 97.250 ; free physical = 254025 ; free virtual = 485636
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ripplebit' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'Single' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:21]
+WARNING: [Synth 8-6104] Input port 'cin' has an internal driver [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Single' (1#1) [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:21]
+WARNING: [Synth 8-3848] Net sum in module/entity top_ripplebit does not have driver. [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_ripplebit' (2#1) [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[5]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[4]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[3]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[1]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[0]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[3]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[1]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[0]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[3]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[1]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1522.609 ; gain = 126.508 ; free physical = 254229 ; free virtual = 485833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1522.609 ; gain = 126.508 ; free physical = 254041 ; free virtual = 485644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1530.609 ; gain = 134.508 ; free physical = 254037 ; free virtual = 485640
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1538.617 ; gain = 142.516 ; free physical = 254109 ; free virtual = 485713
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Single 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[5]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[4]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[3]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[1]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port sum[0]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[3]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[1]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port c[0]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[3]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[2]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[1]
+WARNING: [Synth 8-3331] design top_ripplebit has unconnected port d[0]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 1st driver pin 'S1/cout_inferred/cout' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 2nd driver pin 'GND' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net cout is connected to constant driver, other driver is ignored [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 1st driver pin 'S2/cout_inferred/cout' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 2nd driver pin 'GND' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net cout is connected to constant driver, other driver is ignored [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 1st driver pin 'S3/cout_inferred/cout' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net cout with 2nd driver pin 'GND' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net cout is connected to constant driver, other driver is ignored [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_ripplebit.v:27]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:58 . Memory (MB): peak = 1673.238 ; gain = 277.137 ; free physical = 253420 ; free virtual = 485010
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:58 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253450 ; free virtual = 485041
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:01:58 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253521 ; free virtual = 485113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253579 ; free virtual = 485174
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253579 ; free virtual = 485173
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253574 ; free virtual = 485168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253574 ; free virtual = 485168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253574 ; free virtual = 485168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253569 ; free virtual = 485163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     6|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     6|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253567 ; free virtual = 485161
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.242 ; gain = 277.141 ; free physical = 253564 ; free virtual = 485158
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:02:01 . Memory (MB): peak = 1673.246 ; gain = 277.141 ; free physical = 253565 ; free virtual = 485159
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 31 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:02:12 . Memory (MB): peak = 1770.309 ; gain = 385.781 ; free physical = 253475 ; free virtual = 485061
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/synth_1/top_ripplebit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_ripplebit_utilization_synth.rpt -pb top_ripplebit_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.68 . Memory (MB): peak = 1794.328 ; gain = 0.000 ; free physical = 253446 ; free virtual = 485034
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 19:01:18 2025...
