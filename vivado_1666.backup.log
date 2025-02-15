@@ -1,0 +1,1104 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb 15 17:42:12 2025
+# Process ID: 1666
+# Current directory: /home/mumuksh24/IC_Design/scripting-and-automation
+# Command line: vivado -mode batch -source tcl_run.tcl -tclargs demux.v
+# Log file: /home/mumuksh24/IC_Design/scripting-and-automation/vivado.log
+# Journal file: /home/mumuksh24/IC_Design/scripting-and-automation/vivado.jou
+#-----------------------------------------------------------
+source tcl_run.tcl
+# open_project [pwd]/Automation/Project_1.xpr 
+Scanning sources...
+Finished scanning sources
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1388.531 ; gain = 122.020 ; free physical = 249160 ; free virtual = 480783
+# set_property source_mgmt_mode None [current_project]
+# update_compile_order -fileset sources_1 
+# set_property top [string trimright [lindex $argv 0] ".v"] [current_fileset]
+# set_property source_mgmt_mode None [current_project]
+# update_compile_order -fileset sources_1
+# reset_run synth_1  
+# launch_runs synth_1 -jobs 20
+[Sat Feb 15 17:43:10 2025] Launched synth_1...
+Run output will be captured here: /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Sat Feb 15 17:43:11 2025] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log demux.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source demux.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source demux.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1384.527 ; gain = 118.020 ; free physical = 249988 ; free virtual = 481626
+Command: synth_design -top demux -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4313 
+WARNING: [Synth 8-2490] overwriting previous definition of module clk_div [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/top_mealy.v:115]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1493.352 ; gain = 97.250 ; free physical = 250631 ; free virtual = 482256
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'demux' [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/demux.v:4]
+INFO: [Synth 8-226] default block is never used [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/demux.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'demux' (1#1) [/home/mumuksh24/IC_Design/scripting-and-automation/Modules/demux.v:4]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1522.609 ; gain = 126.508 ; free physical = 250572 ; free virtual = 482204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1522.609 ; gain = 126.508 ; free physical = 250644 ; free virtual = 482275
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1530.609 ; gain = 134.508 ; free physical = 250645 ; free virtual = 482276
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1538.617 ; gain = 142.516 ; free physical = 250560 ; free virtual = 482191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module demux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:55 . Memory (MB): peak = 1700.012 ; gain = 303.910 ; free physical = 252058 ; free virtual = 483688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:01:56 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252091 ; free virtual = 483719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:01:56 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252078 ; free virtual = 483699
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252012 ; free virtual = 483633
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252010 ; free virtual = 483631
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252010 ; free virtual = 483631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252001 ; free virtual = 483622
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 251999 ; free virtual = 483620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 251995 ; free virtual = 483616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT4 |     4|
+|2     |IBUF |     4|
+|3     |OBUF |     4|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    12|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 251992 ; free virtual = 483613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.016 ; gain = 303.914 ; free physical = 252065 ; free virtual = 483686
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:01:59 . Memory (MB): peak = 1700.020 ; gain = 303.914 ; free physical = 252065 ; free virtual = 483686
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:02:09 . Memory (MB): peak = 1844.062 ; gain = 459.535 ; free physical = 251802 ; free virtual = 483423
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/synth_1/demux.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file demux_utilization_synth.rpt -pb demux_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.64 . Memory (MB): peak = 1868.082 ; gain = 0.000 ; free physical = 251955 ; free virtual = 483577
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 17:46:18 2025...
+[Sat Feb 15 17:46:19 2025] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:50 ; elapsed = 00:03:08 . Memory (MB): peak = 1404.105 ; gain = 0.000 ; free physical = 252499 ; free virtual = 484119
+# reset_run impl_1
+# launch_runs impl_1 -jobs 20
+[Sat Feb 15 17:46:19 2025] Launched impl_1...
+Run output will be captured here: /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Sat Feb 15 17:46:19 2025] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log demux.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source demux.tcl -notrace
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source demux.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1384.527 ; gain = 118.020 ; free physical = 251064 ; free virtual = 482679
+Command: link_design -top demux -part xc7a200tfbg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:16 ; elapsed = 00:01:51 . Memory (MB): peak = 1687.973 ; gain = 299.445 ; free physical = 251895 ; free virtual = 483508
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:01 . Memory (MB): peak = 1759.000 ; gain = 71.027 ; free physical = 251995 ; free virtual = 483614
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:02:26 . Memory (MB): peak = 2210.699 ; gain = 451.699 ; free physical = 251240 ; free virtual = 482865
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251277 ; free virtual = 482902
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251276 ; free virtual = 482901
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251276 ; free virtual = 482900
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251273 ; free virtual = 482898
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.25 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251273 ; free virtual = 482897
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251275 ; free virtual = 482900
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251274 ; free virtual = 482899
+Ending Logic Optimization Task | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.27 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251274 ; free virtual = 482899
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251243 ; free virtual = 482868
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 15ae9694f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2210.699 ; gain = 0.000 ; free physical = 251244 ; free virtual = 482868
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:02:27 . Memory (MB): peak = 2210.699 ; gain = 522.727 ; free physical = 251244 ; free virtual = 482869
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/demux_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file demux_drc_opted.rpt -pb demux_drc_opted.pb -rpx demux_drc_opted.rpx
+Command: report_drc -file demux_drc_opted.rpt -pb demux_drc_opted.pb -rpx demux_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/demux_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2293.035 ; gain = 50.316 ; free physical = 251042 ; free virtual = 482655
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2293.035 ; gain = 0.000 ; free physical = 250971 ; free virtual = 482585
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: cc8c26e6
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2293.035 ; gain = 0.000 ; free physical = 250971 ; free virtual = 482584
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2293.035 ; gain = 0.000 ; free physical = 250969 ; free virtual = 482583
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1782c21b8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.047 ; gain = 34.012 ; free physical = 251057 ; free virtual = 482670
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ab7717c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.047 ; gain = 34.012 ; free physical = 250961 ; free virtual = 482574
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ab7717c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.047 ; gain = 34.012 ; free physical = 250949 ; free virtual = 482562
+Phase 1 Placer Initialization | Checksum: 1ab7717c2
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.047 ; gain = 34.012 ; free physical = 250946 ; free virtual = 482559
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1ab7717c2
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2327.047 ; gain = 34.012 ; free physical = 251009 ; free virtual = 482622
+WARNING: [Place 46-29] place_design is not in timing mode. Skip physical synthesis in placer
+Phase 2 Global Placement | Checksum: 1fedf64e8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250856 ; free virtual = 482469
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1fedf64e8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250853 ; free virtual = 482466
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 255ecc987
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250860 ; free virtual = 482474
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1fedf64e8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250915 ; free virtual = 482529
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1fedf64e8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250913 ; free virtual = 482526
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250799 ; free virtual = 482413
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250783 ; free virtual = 482397
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250780 ; free virtual = 482393
+Phase 3 Detail Placement | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250778 ; free virtual = 482392
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250774 ; free virtual = 482387
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250771 ; free virtual = 482385
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250771 ; free virtual = 482384
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250771 ; free virtual = 482384
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1dfb8d6b9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250771 ; free virtual = 482384
+Ending Placer Task | Checksum: f1730385
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250791 ; free virtual = 482405
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2474.098 ; gain = 181.062 ; free physical = 250788 ; free virtual = 482402
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2474.098 ; gain = 0.000 ; free physical = 250762 ; free virtual = 482376
+INFO: [Common 17-1381] The checkpoint '/home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/demux_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file demux_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2474.098 ; gain = 0.000 ; free physical = 250650 ; free virtual = 482264
+INFO: [runtcl-4] Executing : report_utilization -file demux_utilization_placed.rpt -pb demux_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2474.098 ; gain = 0.000 ; free physical = 250664 ; free virtual = 482278
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file demux_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.40 . Memory (MB): peak = 2474.098 ; gain = 0.000 ; free physical = 250780 ; free virtual = 482394
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: 24e6dc9f ConstDB: 0 ShapeSum: cc8c26e6 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 8e49af9b
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:03:35 . Memory (MB): peak = 2600.457 ; gain = 126.359 ; free physical = 251595 ; free virtual = 483200
+Post Restoration Checksum: NetGraph: 26f9e45d NumContArr: 674fcb3e Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 8e49af9b
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:03:35 . Memory (MB): peak = 2612.445 ; gain = 138.348 ; free physical = 251631 ; free virtual = 483236
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 8e49af9b
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:03:35 . Memory (MB): peak = 2612.445 ; gain = 138.348 ; free physical = 251633 ; free virtual = 483238
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 121621a11
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:03:37 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251545 ; free virtual = 483150
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: d315030d
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:03:37 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251606 ; free virtual = 483211
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251563 ; free virtual = 483168
+Phase 4 Rip-up And Reroute | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251569 ; free virtual = 483174
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251570 ; free virtual = 483175
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251571 ; free virtual = 483176
+Phase 6 Post Hold Fix | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251567 ; free virtual = 483172
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000364409 %
+  Global Horizontal Routing Utilization  = 0.000561798 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 0.900901%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 4.5045%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 2.94118%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 10.2941%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251659 ; free virtual = 483264
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251666 ; free virtual = 483271
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 10b25ed64
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251677 ; free virtual = 483282
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:03:38 . Memory (MB): peak = 2627.961 ; gain = 153.863 ; free physical = 251736 ; free virtual = 483341
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+51 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:11 ; elapsed = 00:03:40 . Memory (MB): peak = 2627.965 ; gain = 153.867 ; free physical = 251730 ; free virtual = 483335
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2627.965 ; gain = 0.000 ; free physical = 252010 ; free virtual = 483616
+INFO: [Common 17-1381] The checkpoint '/home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/demux_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file demux_drc_routed.rpt -pb demux_drc_routed.pb -rpx demux_drc_routed.rpx
+Command: report_drc -file demux_drc_routed.rpt -pb demux_drc_routed.pb -rpx demux_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/demux_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file demux_methodology_drc_routed.rpt -pb demux_methodology_drc_routed.pb -rpx demux_methodology_drc_routed.rpx
+Command: report_methodology -file demux_methodology_drc_routed.rpt -pb demux_methodology_drc_routed.pb -rpx demux_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/mumuksh24/IC_Design/scripting-and-automation/Automation/Project_1.runs/impl_1/demux_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file demux_power_routed.rpt -pb demux_power_summary_routed.pb -rpx demux_power_routed.rpx
+Command: report_power -file demux_power_routed.rpt -pb demux_power_summary_routed.pb -rpx demux_power_routed.rpx
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+62 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file demux_route_status.rpt -pb demux_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file demux_timing_summary_routed.rpt -pb demux_timing_summary_routed.pb -rpx demux_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file demux_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file demux_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 2746.289 ; gain = 0.000 ; free physical = 251808 ; free virtual = 483412
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file demux_bus_skew_routed.rpt -pb demux_bus_skew_routed.pb -rpx demux_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 17:56:17 2025...
+[Sat Feb 15 17:56:22 2025] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:01 ; elapsed = 00:10:03 . Memory (MB): peak = 1404.105 ; gain = 0.000 ; free physical = 252951 ; free virtual = 484554
+# open_run impl_1
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.82 . Memory (MB): peak = 1694.969 ; gain = 4.000 ; free physical = 251458 ; free virtual = 483069
+Restored from archive | CPU: 0.400000 secs | Memory: 0.937279 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.83 . Memory (MB): peak = 1694.969 ; gain = 4.000 ; free physical = 251458 ; free virtual = 483070
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:15 ; elapsed = 00:01:48 . Memory (MB): peak = 1694.969 ; gain = 290.863 ; free physical = 251450 ; free virtual = 483062
+# report_power > results/[string trimright [lindex $argv 0] ".v"]/power.txt
+Command: report_power
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date             : Sat Feb 15 18:00:36 2025
+| Host             : vlsi.iitgn.ac.in running 64-bit CentOS Linux release 7.4.1708 (Core)
+| Command          : report_power
+| Design           : demux
+| Device           : xc7a200tfbg676-2
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.570        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.438        |
+| Device Static (W)        | 0.132        |
+| Effective TJA (C/W)      | 1.9          |
+| Max Ambient (C)          | 83.9         |
+| Junction Temperature (C) | 26.1         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Slice Logic    |     0.011 |        4 |       --- |             --- |
+|   LUT as Logic |     0.011 |        2 |    134600 |           <0.01 |
+| Signals        |     0.018 |        8 |       --- |             --- |
+| I/O            |     0.409 |        8 |       400 |            2.00 |
+| Static Power   |     0.132 |          |           |                 |
+| Total          |     0.570 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.076 |       0.044 |      0.031 |
+| Vccaux    |       1.800 |     0.063 |       0.032 |      0.031 |
+| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.191 |       0.186 |      0.005 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.9                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 3.4                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------+-----------+
+| Name  | Power (W) |
++-------+-----------+
+| demux |     0.438 |
++-------+-----------+
+
+
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:26 ; elapsed = 00:02:27 . Memory (MB): peak = 2405.828 ; gain = 710.859 ; free physical = 250058 ; free virtual = 481684
+# report_timing > results/[string trimright [lindex $argv 0] ".v"]/timing.txt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Feb 15 18:00:36 2025
+| Host         : vlsi.iitgn.ac.in running 64-bit CentOS Linux release 7.4.1708 (Core)
+| Command      : report_timing
+| Design       : demux
+| Device       : 7a200t-fbg676
+| Speed File   : -2  PRODUCTION 1.22 2018-03-21
+--------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack:                    inf
+  Source:                 C[0]
+                            (input port)
+  Destination:            y[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.308ns  (logic 3.516ns (55.736%)  route 2.792ns (44.264%))
+  Logic Levels:           3  (IBUF=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    R18                                               0.000     0.000 r  C[0] (IN)
+                         net (fo=0)                   0.000     0.000    C[0]
+    R18                  IBUF (Prop_ibuf_I_O)         0.852     0.852 r  C_IBUF[0]_inst/O
+                         net (fo=4, routed)           1.251     2.103    C_IBUF[0]
+    SLICE_X0Y103         LUT4 (Prop_lut4_I1_O)        0.115     2.218 r  y_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.541     3.759    y_OBUF[3]
+    T25                  OBUF (Prop_obuf_I_O)         2.548     6.308 r  y_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     6.308    y[3]
+    T25                                                               r  y[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+# report_utilization > results/[string trimright [lindex $argv 0] ".v"]/utilization.txt
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat Feb 15 18:00:37 2025
+| Host         : vlsi.iitgn.ac.in running 64-bit CentOS Linux release 7.4.1708 (Core)
+| Command      : report_utilization
+| Design       : demux
+| Device       : 7a200tfbg676-2
+| Design State : Routed
+--------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+-----------+-------+
+|        Site Type        | Used | Fixed | Available | Util% |
++-------------------------+------+-------+-----------+-------+
+| Slice LUTs              |    2 |     0 |    134600 | <0.01 |
+|   LUT as Logic          |    2 |     0 |    134600 | <0.01 |
+|   LUT as Memory         |    0 |     0 |     46200 |  0.00 |
+| Slice Registers         |    0 |     0 |    269200 |  0.00 |
+|   Register as Flip Flop |    0 |     0 |    269200 |  0.00 |
+|   Register as Latch     |    0 |     0 |    269200 |  0.00 |
+| F7 Muxes                |    0 |     0 |     67300 |  0.00 |
+| F8 Muxes                |    0 |     0 |     33650 |  0.00 |
++-------------------------+------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 0     |          Yes |         Set |            - |
+| 0     |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------+------+-------+-----------+-------+
+|         Site Type        | Used | Fixed | Available | Util% |
++--------------------------+------+-------+-----------+-------+
+| Slice                    |    1 |     0 |     33650 | <0.01 |
+|   SLICEL                 |    1 |     0 |           |       |
+|   SLICEM                 |    0 |     0 |           |       |
+| LUT as Logic             |    2 |     0 |    134600 | <0.01 |
+|   using O5 output only   |    0 |       |           |       |
+|   using O6 output only   |    0 |       |           |       |
+|   using O5 and O6        |    2 |       |           |       |
+| LUT as Memory            |    0 |     0 |     46200 |  0.00 |
+|   LUT as Distributed RAM |    0 |     0 |           |       |
+|   LUT as Shift Register  |    0 |     0 |           |       |
+| LUT Flip Flop Pairs      |    0 |     0 |    134600 |  0.00 |
+| Unique Control Sets      |    0 |       |           |       |
++--------------------------+------+-------+-----------+-------+
+* Note: Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| Block RAM Tile |    0 |     0 |       365 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |       365 |  0.00 |
+|   RAMB18       |    0 |     0 |       730 |  0.00 |
++----------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++-----------+------+-------+-----------+-------+
+| Site Type | Used | Fixed | Available | Util% |
++-----------+------+-------+-----------+-------+
+| DSPs      |    0 |     0 |       740 |  0.00 |
++-----------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+-------+
+|          Site Type          | Used | Fixed | Available | Util% |
++-----------------------------+------+-------+-----------+-------+
+| Bonded IOB                  |    8 |     0 |       400 |  2.00 |
+|   IOB Master Pads           |    3 |       |           |       |
+|   IOB Slave Pads            |    4 |       |           |       |
+| Bonded IPADs                |    0 |     0 |        26 |  0.00 |
+| Bonded OPADs                |    0 |     0 |        16 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
+| PHASER_REF                  |    0 |     0 |        10 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |        40 |  0.00 |
+| IN_FIFO                     |    0 |     0 |        40 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |        10 |  0.00 |
+| IBUFDS                      |    0 |     0 |       384 |  0.00 |
+| GTPE2_CHANNEL               |    0 |     0 |         8 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        40 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        40 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       500 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |         4 |  0.00 |
+| ILOGIC                      |    0 |     0 |       400 |  0.00 |
+| OLOGIC                      |    0 |     0 |       400 |  0.00 |
++-----------------------------+------+-------+-----------+-------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    0 |     0 |        32 |  0.00 |
+| BUFIO      |    0 |     0 |        40 |  0.00 |
+| MMCME2_ADV |    0 |     0 |        10 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
+| BUFMRCE    |    0 |     0 |        20 |  0.00 |
+| BUFHCE     |    0 |     0 |       120 |  0.00 |
+| BUFR       |    0 |     0 |        40 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| OBUF     |    4 |                  IO |
+| LUT4     |    4 |                 LUT |
+| IBUF     |    4 |                  IO |
++----------+------+---------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2405.828 ; gain = 0.000 ; free physical = 250094 ; free virtual = 481720
+# update_compile_order -fileset sources_1
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 15 18:00:38 2025...
